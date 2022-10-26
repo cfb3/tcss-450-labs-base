@@ -10,7 +10,17 @@ CREATE TABLE Members (MemberID SERIAL PRIMARY KEY,
 DROP TABLE IF EXISTS Credentials CASCADE;
 CREATE TABLE Credentials (CredentialID SERIAL PRIMARY KEY,
                       MemberID INT NOT NULL,
-                      SaltedHash VARCHAR(255) NOT NULL,
-                      Salt VARCHAR(255),
+                      Password VARCHAR(255) NOT NULL,
+                      SALT VARCHAR(255),
                       FOREIGN KEY(MemberID) REFERENCES Members(MemberID)
 );
+
+
+
+
+
+
+
+
+
+
