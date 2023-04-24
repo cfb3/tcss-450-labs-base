@@ -8,7 +8,8 @@
     "url": "https://github.com/cfb3/tcss-450-web-service-starter"
   },
   "scripts": {
-    "test": "index.js"
+    "dev": "export NODE_ENV=dev || set NODE_ENV=dev && node index.js",
+    "local": "export NODE_ENV=local || set NODE_ENV=local && node index.js"
   },
   "keywords": [
     "TCSS450",

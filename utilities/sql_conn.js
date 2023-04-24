@@ -1,10 +1,7 @@
-// Obtain a Pool of DB connections. 
-const { Pool } = require('pg')
-const pool = new Pool({
-    connectionString: process.env.DATABASE_URL,
-    ssl: {
-        rejectUnauthorized: false,
-    }
-})
+// Obtain a Pool of DB connections.
+const config = require("../config.js");
 
-module.exports = pool
+const { Pool } = require("pg");
+const pool = new Pool(config.DB_OPTIONS);
+
+module.exports = pool;
