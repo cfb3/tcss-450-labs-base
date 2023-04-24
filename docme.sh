@@ -1,1 +1,1 @@
-apidoc -i routes/ -o apidoc/
+apidoc -i routes/ -o apidoc/ -d
